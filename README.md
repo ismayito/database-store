@@ -2,7 +2,6 @@
 
 > This project includes the creation of the database for the vet clinic.
 
-
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -19,20 +18,16 @@ This repository includes files with plain SQL that can be used to recreate a dat
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -41,7 +36,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Vet clinic database]** is a project that was was done to create a database for the vet clinic.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -66,8 +61,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Query data from table]**
 - **[Update date of the table]**
 - **[Add more tables]**
@@ -79,8 +72,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -164,7 +155,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank the microverse staff for doing their best to equip us with the necesarry skills to start our software engineering carreers. I would also like to thank my coding partners who have helped me along the way.
+I would like to thank the microverse staff for doing their best to equip us with the necessary skills to start our software engineering carreers. I would also like to thank my coding partners who have helped me along the way.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
