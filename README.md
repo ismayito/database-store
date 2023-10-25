@@ -32,7 +32,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [vet_clinic database project] <a name="about-project"></a>
 
 **[Vet clinic database]** is a project that was was done to create a database for the vet clinic.
 

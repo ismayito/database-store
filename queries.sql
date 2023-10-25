@@ -49,7 +49,9 @@ SELECT species,MAX(weight_kg) FROM ANIMALS GROUP BY species;
 SELECT species,MIN(weight_kg) FROM ANIMALS GROUP BY species;
 //What is the average number of escape attempts per animal type of those born between 1990 and 2000?
 SELECT species, AVG(escape_attempts) FROM ANIMALS GROUP BY species WHERE date_of_birth=1990 AND date_of_birth=2000; 
-
-
+//Update the skipped Squirtle animal data
+UPDATE ANIMALS SET species='Pokemon' WHERE NAME='Squirtle';
+//Update the skipped Squirtle animal data weight_kg column;
+UPDATE ANIMALS SET weight_kg = weight_kg*-1 WHERE name='Squirtle';
 
 
