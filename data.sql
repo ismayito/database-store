@@ -29,7 +29,7 @@ INSERT INTO OWNERS(FULL_NAME,AGE)
 //Modify your inserted animals so it includes the species_id value:
 //If the name ends in "mon" it will be Digimon
 //All other animals are Pokemon
-UPDATE ANIMALS SET species_id=1 WHERE TRIM(NAME) LIKE '%mon';
+UPDATE ANIMALS SET species_id=2 WHERE TRIM(NAME) LIKE '%mon';
 //Sam Smith owns Agumon.
 UPDATE ANIMALS SET owner_id =1 WHERE TRIM(NAME)='Agumon';
 //Jennifer Orwell owns Gabumon and Pikachu.
