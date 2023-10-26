@@ -54,4 +54,27 @@ UPDATE ANIMALS SET species='Pokemon' WHERE NAME='Squirtle';
 //Update the skipped Squirtle animal data weight_kg column;
 UPDATE ANIMALS SET weight_kg = weight_kg*-1 WHERE name='Squirtle';
 
+//Write queries (using JOIN) to answer the following questions
+//:What animals belong to Melody Pond?
+SELECT name FROM ANIMALS JOIN OWNERS ON ANIMALS.owner_id=OWNERS.id WHERE TRIM(OWNERS.full_name)='Melody Pond';
+//List of all animals that are pokemon (their type is Pokemon).
+SELECT ANIMALS.name FROM ANIMALS JOIN SPECIES ON ANIMALS.species_id=SPECIES.id WHERE ANIMALS.species_id=1;
+//List all owners and their animals, remember to include those that don't own any animal.
+SELECT OWNERS.full_name, ANIMALS.name FROM OWNERS LEFT  JOIN ANIMALS ON ANIMALS.owner_id=OWNERS.id;
+//How many animals are there per species?
+SELECT SPECIES.name, COUNT(SPECIES.name) FROM ANIMALS JOIN SPECIES ON ANIMALS.species_id=SPECIES.id GROUP BY SPECIES.name;
+//List all Digimon owned by Jennifer Orwell.
+SELECT ANIMALS.name, OWNERS.full_name FROM ANIMALS JOIN OWNERS ON ANIMALS.owner_id=OWNERS.id JOIN SPECIES ON SPECIES.id=ANIMALS.species_id 
+WHERE TRIM(OWNERS.full_name)='Jennifer Orwell' AND TRIM(SPECIES.name)='Digimon';
+//List all animals owned by Dean Winchester that haven't tried to escape.
+SELECT ANIMALS.name, OWNERS.full_name FROM ANIMALS 
+JOIN OWNERS ON ANIMALS.owner_id =OWNERS.id
+WHERE escape_attempts<=0 AND TRIM(OWNERS.full_name)='Dean Winchester';
+//Who owns the most animals?
+SELECT OWNERS.full_name, COUNT(ANIMALS.id)
+FROM OWNERS
+LEFT JOIN ANIMALS ON OWNERS.id = ANIMALS.owner_id
+GROUP BY OWNERS.full_name
+LIMIT 1;
+
 
