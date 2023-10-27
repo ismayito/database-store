@@ -41,3 +41,39 @@ UPDATE ANIMALS SET owner_id =3  WHERE TRIM(NAME)='Devimon' OR TRIM(NAME)='Plantm
 UPDATE ANIMALS SET owner_id =4  WHERE TRIM(NAME)='Charmander' OR TRIM(NAME)='Squirtle' OR TRIM(NAME)='Blossom';
 //Dean Winchester owns Angemon and Boarmon.
 UPDATE ANIMALS SET owner_id =5  WHERE TRIM(NAME)='Angemon' OR TRIM(NAME)='Boarmon'
+//Insert data into vets table;
+INSERT INTO  VETS(name,date_of_graduation,age ) 
+VALUES('William Tatcher','2000-04-23',45),
+('Maisy Smith','2019-01-17',26),
+('Stephanie Mendez','1991-05-04',64),
+('Jack Harkness','2008-06-08',38);
+//Insert data into specializations table;
+INSERT INTO SPECIALIZATIONS(vets_id,species_id)
+VALUES(1,1),
+(3,1),
+(3,2),
+(4,2);
+//Insert data into visits;
+INSERT INTO VISITS(vets_id,animals_id,date_of_visit)
+VALUES(1,1,'2020-05-24'),
+(3,1,'2020-07-22'),
+(4,2,'2021-02-02'),
+(2,3,'2020-01-05'),
+(2,3,'2020-05-08'),
+(2,3,'2020-05-14'),
+(3,4,'2020-05-14'),
+(4,5,'2021-02-24'),
+(2,6,'2019-12-21'),
+(1,6,'2020-08-10'),
+(2,6,'2022-04-07'),
+(3,15,'2019-09-29'),
+(4,7,'2020-10-03'),
+(4,7,'2020-11-04'),
+(2,8,'2019-01-24'),
+(2,8,'2019-05-15'),
+(2,8,'2020-02-27'),
+(2,8,'2020-08-03'),  
+(2,8,'2020-01-05'),
+(3,13,'2020-05-24'),
+(1,13,'2021-01-11');
+
