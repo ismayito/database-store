@@ -30,4 +30,7 @@ CREATE TABLE specializations(vets_id INT,species_id INT);
 // Create a join table for vets and animals tables;
 CREATE TABLE visits(vets_id INT,animals_id INT,date_of_visit DATE);
 
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
 
