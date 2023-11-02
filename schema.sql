@@ -33,4 +33,13 @@ CREATE TABLE visits(vets_id INT,animals_id INT,date_of_visit DATE);
 -- Add an email column to your owners table
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
+-- Create index for easy querying of vetinarians in the visits table
+CREATE INDEX idx_animal_id ON visits (animals_id);
+
+-- Create index for easy querying of vetinarians in the visits table
+CREATE INDEX vet_index ON visits(vets_id) INCLUDE(animals_id,date_of_visit) WHERE vets_id = 2;
+
+-- Create index for easy querying of Emails in the owners table
+CREATE INDEX owners_emailc ON OWNERS(email);
+
 
