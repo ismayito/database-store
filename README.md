@@ -112,6 +112,12 @@ Example command:
 - Twitter: [@IsmailMayito](https://twitter.com/IsmailMayito)
 - LinkedIn: [mayito-ismail](https://www.linkedin.com/in/mayito-ismail-2b0067178/)
 
+**Nwadinigwe Victor**
+
+- GitHub: [@Victor-chiemerie](https://github.com/Victor-chiemerie)
+- Twitter: [@VictorChiemer20](https://twitter.com/VictorChiemer20)
+- LinkedIn: [@Nwadinigwe Chiemerie Victor](https://www.linkedin.com/in/victornwadinigwe/)
+
 
 <!-- FUTURE FEATURES -->
 

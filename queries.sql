@@ -133,3 +133,4 @@ WHERE TRIM(vets.name) = 'Maisy Smith'
 GROUP BY species.name
 ORDER BY visit_count DESC
 LIMIT 1;
+
